@@ -364,6 +364,7 @@ main() {
 		execute_hook "post-restore-all"
 		stop_spinner
 		display_message "Tmux restore complete!"
+                tmux kill-session -t 0
 	fi
 }
 main
